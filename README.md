@@ -16,3 +16,4 @@
  ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/RPS.png)
 ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Latency%200.5%200.95.png)
 ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Latency%200.99%20max.png)
+![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Error%20Rate%20500.png)
