@@ -11,6 +11,7 @@
 6. Error Rate - количество 500ых ответов
 Настроить алертинг в графане на Error Rate и Latency.
 На выходе должно быть:
+
 0. скриншоты дашборды с графиками в момент стресс-тестирования сервиса. Например, после 5-10 минут нагрузки.
  ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/RPS.png)
 ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Latency%200.5%200.95.png)
