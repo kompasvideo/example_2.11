@@ -1,0 +1,4 @@
+FOR /L %N IN () DO ab.exe -n 50 -c 10 -m POST http://localhost:58481/user/
+FOR /L %N IN () DO ab.exe -n 50 -c 10 -m DELETE http://localhost:58481/user/0
+-42.17  RPS
+

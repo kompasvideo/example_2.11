@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otus-dp
+  labels:
+    app: otus-dp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: otus-dp
+  template:
+    metadata:
+      labels:
+        app: otus-dp
+    spec:
+      containers:
+      - name: otus-dp
+        image: andrey1andrey/otus:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_DATASOURCE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: otus-cm
+              key: spring_datasource_url
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: otus-secret
+              key: password

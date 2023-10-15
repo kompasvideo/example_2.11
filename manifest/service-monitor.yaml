@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: otus-monitor
+  labels:
+    app: otus-monitor
+spec:
+  endpoints:
+    - port: metrics
+      scrapeTimeout: 30s
+      path: /actuator/prometheus
+      honorLabels: true
+      scheme: http
+  #  jobLabel: stack
+  namespaceSelector:
+    matchNames:
+      - default
+  selector:
+    matchLabels:
+      app: otus-dp
