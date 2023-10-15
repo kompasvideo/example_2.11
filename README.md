@@ -14,3 +14,5 @@
 0. скриншоты дашборды с графиками в момент стресс-тестирования сервиса. Например, после 5-10 минут нагрузки.
 1. json-дашборды.
  ![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/RPS.png)
+![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Latency%200.5%200.95.png)
+![](https://github.com/kompasvideo/otus_2.11/blob/main/grafana/Latency%200.99%20max.png)
